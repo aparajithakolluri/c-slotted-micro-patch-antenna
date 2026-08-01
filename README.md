@@ -1,84 +1,97 @@
-
-
-# 📡 C-Slotted Microstrip Patch Antenna
+# 📡 C-Slotted Microstrip Patch Antenna on Jean Substrate
 
 ## Overview
 
-The **C-Slotted Microstrip Patch Antenna** is designed and simulated using **ANSYS HFSS** to enhance antenna bandwidth and impedance matching through the incorporation of C-shaped slots on the radiating patch. The slot structure alters the surface current distribution, enabling improved return loss and multi-resonant characteristics suitable for modern wireless communication applications.
+This project presents the design and simulation of a **C-Slotted Microstrip Patch Antenna** using **ANSYS HFSS**. The antenna is fabricated on a **Jean substrate**, a textile material suitable for wearable and flexible antenna applications. The incorporation of C-shaped slots on the radiating patch increases the effective current path, resulting in improved impedance matching, enhanced bandwidth, and multiple resonant frequencies.
+
+The antenna demonstrates good return loss, acceptable VSWR, and stable radiation characteristics, making it suitable for various wireless communication applications.
 
 ---
 
 ## Antenna Design
 
-The antenna consists of a microstrip patch fabricated on an  jean substrate and excited using a microstrip line feed. Multiple C-shaped slots are etched on the radiating patch to improve impedance matching and bandwidth while maintaining a compact design.
+The antenna consists of a rectangular microstrip patch with two symmetrically etched C-shaped slots. It is excited using a microstrip line feed and designed on a Jean substrate to provide flexibility while maintaining satisfactory electromagnetic performance.
 
+### Design Specifications
+
+| Parameter           | Value                              |
+| ------------------- | ---------------------------------- |
+| Antenna Type        | C-Slotted Microstrip Patch Antenna |
+| Substrate           | Jean (Textile)                     |
+| Feeding Technique   | Microstrip Line Feed               |
+| Simulation Software | ANSYS HFSS                         |
+| Operating Frequency | 3–12 GHz                           |
+
+---
 
 ## Simulation Results
 
-The antenna was analyzed using **ANSYS HFSS**. The simulated **S11 (Return Loss)** response demonstrates multiple resonant frequencies with good impedance matching over the operating band.
+The antenna was simulated using ANSYS HFSS, and its performance was evaluated using S-parameters, VSWR, Smith Chart, and radiation characteristics.
 
-### S11 Parameter Plot
+### Return Loss (S11)
 
-<p align="center">
-  <img src="images/s11_plot.png" width="650">
-</p>
+The antenna exhibits good impedance matching with **S11 below -10 dB** at multiple resonant frequencies.
 
-### Key Performance
+**Resonant Frequencies**
 
-| Parameter            | Value                                                                               |
-| -------------------- | ----------------------------------------------------------------------------------- |
-| Simulation Software  | ANSYS HFSS                                                                          |
-| Antenna Type         | C-Slotted Microstrip Patch                                                          |
-| Feeding Method       | Microstrip Line Feed                                                                |
-| Substrate            | FR-4 Epoxy                                                                          |
-| Return Loss          | Better than -10 dB at multiple resonant frequencies                                 |
-| Resonant Frequencies | 4.18 GHz, 6.60 GHz, 7.20 GHz, 10.19 GHz, 10.84 GHz, 11.57 GHz, 12.53 GHz, 12.70 GHz |
+* 4.16 GHz
+* 6.61 GHz
+* 6.98 GHz
+* 10.74 GHz
+* 11.67 GHz
+
+---
+
+### VSWR
+
+The simulated VSWR remains close to **1** at the resonant frequencies and stays below **2** across the operating bands, indicating efficient impedance matching and low reflection.
+
+---
+
+### Smith Chart
+
+The Smith Chart shows that the antenna impedance approaches the center of the chart at the resonant frequencies, confirming good impedance matching with the 50 Ω transmission line.
+
+---
+
+### Radiation Characteristics
+
+The simulated 3D radiation pattern demonstrates stable radiation with directional characteristics suitable for wireless communication applications.
 
 ---
 
 ## Features
 
 * Compact microstrip antenna design
-* C-shaped slot implementation
-* Improved impedance matching
-* Multi-band operation
-* Enhanced return loss characteristics
+* Jean textile substrate for wearable applications
+* Multiple resonant frequencies
+* Good impedance matching
+* Low return loss
+* VSWR less than 2 over the operating bands
+* Stable radiation characteristics
 * Designed and optimized using ANSYS HFSS
 
 ---
 
 ## Working Principle
 
-The C-shaped slots increase the effective current path on the patch, resulting in multiple resonant modes. This enhances bandwidth and improves impedance matching by reducing the reflection coefficient (S11). The optimized geometry enables efficient radiation over multiple operating frequencies while maintaining a compact antenna size.
+The C-shaped slots modify the surface current distribution on the radiating patch, increasing the effective current path and generating multiple resonant modes. This improves impedance matching and bandwidth while maintaining a compact antenna structure. The Jean substrate provides flexibility and makes the antenna suitable for wearable and textile-based wireless communication systems.
 
 ---
 
 ## Applications
 
-* Ultra-Wideband (UWB) Communication
-* Wireless Communication Systems
-* WLAN
-* Wi-Fi Applications
-* ISM Band Devices
-* RF and Microwave Systems
-* IoT Applications
+* Wearable Wireless Communication
+* WBAN (Wireless Body Area Networks)
+* ISM Band Applications
+* IoT Devices
+* Wi-Fi and WLAN Systems
+* UWB Communication
+* Biomedical Monitoring Systems
+* Flexible RF Systems
 
 ---
 
-## Software Used
+## Conclusion
 
-* ANSYS HFSS
-* MATLAB (for calculations, optional)
-
----
-
-## Future Improvements
-
-* Gain enhancement using parasitic elements
-* Bandwidth optimization
-* MIMO antenna implementation
-* Circular polarization
-* Experimental fabrication and measurement
-
----
-
+A **C-Slotted Microstrip Patch Antenna** on a **Jean substrate** was successfully designed and simulated using **ANSYS HFSS**. The antenna achieved multiple resonant frequencies with good impedance matching, low return loss, acceptable VSWR, and stable radiation performance. The use of a textile substrate makes the design suitable for wearable and flexible wireless communication applications while maintaining reliable electromagnetic performance.
